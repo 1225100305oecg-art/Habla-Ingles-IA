@@ -32,7 +32,7 @@ class _EstadoPantalla extends State<PantallaPronunciacion> {
               Text(f.espanol),
               const SizedBox(height: 8),
               Text('Foco: ${f.foco}', style: const TextStyle(fontWeight: FontWeight.bold)),
-              Text('💡 ${f.consejo}'),
+              Text(' ${f.consejo}'),
               const SizedBox(height: 12),
               Wrap(spacing: 8, children: [
                 OutlinedButton.icon(
