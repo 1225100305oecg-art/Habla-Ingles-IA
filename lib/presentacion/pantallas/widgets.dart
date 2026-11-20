@@ -31,7 +31,7 @@ class PalabrasColoreadas extends StatelessWidget {
             ),
         ]),
         const SizedBox(height: 8),
-        Text('Puntaje: ${(resultado.puntaje * 100).round()}%  ${resultado.aprobado ? "✅ ¡Muy bien!" : "🔁 Inténtalo otra vez"}',
+        Text('Puntaje: ${(resultado.puntaje * 100).round()}%  ${resultado.aprobado ? " ¡Muy bien!" : " Inténtalo otra vez"}',
             style: Theme.of(context).textTheme.titleMedium),
         if (resultado.porPracticar.isNotEmpty) Text('Practica: ${resultado.porPracticar.join(", ")}'),
       ]);
