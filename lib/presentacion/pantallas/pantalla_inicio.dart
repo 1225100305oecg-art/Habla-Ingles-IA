@@ -31,13 +31,13 @@ class PantallaInicio extends StatelessWidget {
       body: ListenableBuilder(
         listenable: vm,
         builder: (context, _) => ListView(padding: const EdgeInsets.all(16), children: [
-          Text('Nivel ${vm.nivel.etiqueta}  ·  🔥 Racha: ${vm.progreso.racha} día(s)',
+          Text('Nivel ${vm.nivel.etiqueta}  ·   Racha: ${vm.progreso.racha} día(s)',
               style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(height: 8),
           if (vm.puedeSubirDeNivel)
             Card(
               child: ListTile(
-                title: const Text('🎉 ¡Dominas este nivel!'),
+                title: const Text(' ¡Dominas este nivel!'),
                 subtitle: Text('Pasa a ${vm.nivel.siguiente!.etiqueta}'),
                 trailing: FilledButton(onPressed: vm.subirDeNivel, child: const Text('Subir')),
               ),
@@ -48,7 +48,7 @@ class PantallaInicio extends StatelessWidget {
           for (final b in vm.plan)
             Card(
               child: ListTile(
-                title: Text('${b.habilidad.nombre} · ${b.minutos} min${b.esRefuerzo ? "  ⭐ refuerzo" : ""}'),
+                title: Text('${b.habilidad.nombre} · ${b.minutos} min${b.esRefuerzo ? "   refuerzo" : ""}'),
                 subtitle: LinearProgressIndicator(value: vm.progreso.dominioDe(b.habilidad)),
                 trailing: const Icon(Icons.chevron_right),
                 onTap: () => _ir(context, _destino(b.habilidad)),
