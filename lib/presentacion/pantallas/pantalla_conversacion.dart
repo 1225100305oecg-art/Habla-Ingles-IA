@@ -60,7 +60,7 @@ class _EstadoPantalla extends State<PantallaConversacion> {
                     color: Colors.amber.shade100,
                     child: ListTile(
                       dense: true,
-                      title: Text('✏️ ${c.original} → ${c.corregido}'),
+                      title: Text(' ${c.original} → ${c.corregido}'),
                       subtitle: Text(c.explicacion),
                     ),
                   ),
