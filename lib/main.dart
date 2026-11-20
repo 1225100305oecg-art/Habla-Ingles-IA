@@ -22,7 +22,7 @@ class _HablaFluidoAppState extends State<HablaFluidoApp> {
   Widget build(BuildContext context) => MaterialApp(
         title: 'Habla Fluido',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(colorSchemeSeed: const Color(0xFF0E7C86), useMaterial3: true),
+        theme: ThemeData(colorSchemeSeed: const Color(0xFFE7C8F0), useMaterial3: true),
         home: FutureBuilder<void>(
           future: _inicio,
           builder: (_, s) => s.connectionState == ConnectionState.done
