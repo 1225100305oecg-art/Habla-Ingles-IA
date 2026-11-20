@@ -26,7 +26,7 @@ class _EstadoPantalla extends State<PantallaRepaso> {
           listenable: vm,
           builder: (context, _) {
             final t = vm.actual;
-            if (t == null) return const Center(child: Text('🎉 No tienes repasos pendientes hoy.'));
+            if (t == null) return const Center(child: Text(' No tienes repasos pendientes hoy.'));
             return ListView(padding: const EdgeInsets.all(16), children: [
               Text('Quedan ${vm.restantes}'),
               const SizedBox(height: 12),
